@@ -706,6 +706,7 @@ const api = {
   },
 
   executeScriptInBackground: (script, cb) => {
+    // Do not edit without security review
     const win = new BrowserWindow({
       show: false,
       webPreferences: {
